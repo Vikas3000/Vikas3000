@@ -1,6 +1,6 @@
-# Snake Animation Workflow File
-# .github/workflows/snake.yml
-name: Generate Snake Animation
+# Profile Activity Graph Workflow
+# .github/workflows/activity-graph.yml
+name: Generate GitHub Activity Graph
 on:
   schedule:
     - cron: "0 */12 * * *" # Runs every 12 hours
@@ -8,17 +8,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Generate Snake Animation
+    name: Generate Activity Graph
     steps:
       - uses: actions/checkout@v3
 
-      - uses: Platane/snk@master
-        id: snake-gif
+      - uses: Ashutosh00710/github-readme-activity-graph@v3
         with:
           github_user_name: vikas3000
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          theme: react-dark
+          hide_border: true
+          bg_color: "00000000"
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v2.5.0
