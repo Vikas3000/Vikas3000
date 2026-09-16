@@ -10,9 +10,6 @@
 
 <br/>
 
-<!-- Live Supabase-powered visitor counter -->
-<img src="https://YOUR-PROJECT-REF.functions.supabase.co/visitor-counter" alt="Live Visitor Count (Supabase)" />
-&nbsp;
 <img src="https://komarev.com/ghpvc/?username=vikas3000&label=Profile%20Views&color=F77D0A&style=for-the-badge" alt="Profile Views" />
 
 </div>
